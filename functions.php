@@ -1,6 +1,6 @@
 <?php
 /**
- * Genesis Sample.
+ * Genesis Sample WF.
  *
  * This file adds functions to the Genesis Sample Theme.
  *

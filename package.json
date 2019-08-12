@@ -8,11 +8,20 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass --watch styles/style.scss -o ../genesis-sample"
+    "scss": "node-sass --watch styles/style.scss -o ../genesis-sample-wf"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "node-sass": "^4.12.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teaguecnelson/Starting-Blueprint.git"
+  },
+  "bugs": {
+    "url": "https://github.com/teaguecnelson/Starting-Blueprint/issues"
+  },
+  "homepage": "https://github.com/teaguecnelson/Starting-Blueprint#readme"
 }
