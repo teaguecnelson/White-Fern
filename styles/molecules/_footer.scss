@@ -9,9 +9,11 @@
   color: #fff;
 }
 
-.footer-widgets p {
+.footer-widgets p,
+.footer-widgets a {
   font-size: 16px;
   font-weight: thin;
+  color: $footer-txt-color;
 }
 
 .site-footer {
@@ -19,6 +21,11 @@
   border-top: none;
 }
 
-.site-footer p {
+.site-footer p,
+.site-footer a,
+.site-footer .genesis-nav-menu a:hover,
+.site-footer .genesis-nav-menu a:focus,
+.site-footer .genesis-nav-menu a:active,
+.genesis-nav-menu .current-menu-item > a {
   color: $footer-txt-color;
 }

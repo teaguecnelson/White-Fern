@@ -1614,15 +1614,22 @@ a {
 .footer-widgets h3 {
   color: #fff; }
 
-.footer-widgets p {
+.footer-widgets p,
+.footer-widgets a {
   font-size: 16px;
-  font-weight: thin; }
+  font-weight: thin;
+  color: #868686; }
 
 .site-footer {
   background-color: #3b3b3a;
   border-top: none; }
 
-.site-footer p {
+.site-footer p,
+.site-footer a,
+.site-footer .genesis-nav-menu a:hover,
+.site-footer .genesis-nav-menu a:focus,
+.site-footer .genesis-nav-menu a:active,
+.genesis-nav-menu .current-menu-item > a {
   color: #868686; }
 
 .jumbo {
