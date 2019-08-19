@@ -26,6 +26,29 @@
 .site-footer .genesis-nav-menu a:hover,
 .site-footer .genesis-nav-menu a:focus,
 .site-footer .genesis-nav-menu a:active,
-.genesis-nav-menu .current-menu-item > a {
+.site-footer .genesis-nav-menu .current-menu-item > a {
   color: $footer-txt-color;
+  font-size: 16px;
+}
+
+.footer-widgets-3 {
+  padding: 2.5rem 6.5rem 0;
+}
+
+.mc4wp-form-fields p {
+  margin: 0;
+}
+
+.mc4wp-form-fields input {
+  padding: 10px 15px;
+  height: 40px;
+  background-color: #4a4a4a;
+  border: 2px solid #4a4a4a;
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.email-form-submit-button {
+  margin-top: 15px;
 }

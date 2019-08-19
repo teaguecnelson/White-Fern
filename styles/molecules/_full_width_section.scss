@@ -10,3 +10,27 @@
     width: 65%;
   }
 }
+
+.dark-bg {
+  background-color: $brand-color-dark;
+
+  h2,
+  h3,
+  p,
+  a,
+  ul {
+    color: $white;
+  }
+}
+
+.tan-bg {
+  background-color: $brand-color-light;
+
+  // h2,
+  // h3,
+  // p,
+  // a,
+  // ul {
+  //   color: $text-color;
+  // }
+}

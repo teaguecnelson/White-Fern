@@ -1,3 +1,14 @@
+// AlignWide Width
+@media only screen and (min-width: 960px) {
+  .full-width-content .site-container .alignwide {
+    margin-left: -100px !important;
+    margin-right: -100px !important;
+    max-width: calc(100% + 200px) !important;
+    width: auto;
+  }
+}
+
+// Content-Sidebar Width
 @media only screen and (min-width: 960px) {
   .sidebar {
     width: 20%;
@@ -7,6 +18,14 @@
   }
 }
 
+// Page Sizing
 .page {
   margin-bottom: 0;
+}
+
+a:active,
+a:focus {
+  outline: 0;
+  border: none;
+  -moz-outline-style: none;
 }

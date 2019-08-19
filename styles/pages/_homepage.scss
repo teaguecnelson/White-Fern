@@ -1,0 +1,19 @@
+.home {
+  // background-color: $brand-color-light;
+
+  .home-banner {
+    font-size: 48px;
+    line-height: 1.2em;
+  }
+
+  .site-inner {
+    padding: 0 30px;
+  }
+
+  .home-slider-wrapper {
+    @media only screen and (min-width: 960px) {
+      max-width: calc(100vw - 280px);
+      margin: 0 auto;
+    }
+  }
+}

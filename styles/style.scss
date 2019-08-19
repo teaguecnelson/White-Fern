@@ -6,7 +6,7 @@ Author: StudioPress
 Author URI: https://www.studiopress.com/
 
 Version: 3.0.1
-
+ 
 Tags: accessibility-ready, block-styles, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, left-sidebar, one-column, right-sidebar, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, two-columns, wide-blocks
 
 Template: genesis
@@ -22,6 +22,8 @@ Text Domain: genesis-sample
 @import "common/variables";
 @import "common/import_fonts";
 @import "common/site_layout";
+@import "common/anchors_wraper_deeplink";
+@import "common/scroll_animations";
 
 /** atoms */
 @import "atoms/text";
@@ -31,8 +33,12 @@ Text Domain: genesis-sample
 @import "molecules/footer";
 @import "molecules/jumbo_cover";
 @import "molecules/full_width_section";
-@import "molecules/anchors_wraper_deeplink";
+@import "molecules/angled-edges";
+@import "molecules/soliloquy_slider";
+@import "molecules/header_highlight";
 
 /** Organisms */
 
 /** Pages */
+@import "pages/homepage";
+@import "pages/standard_page";

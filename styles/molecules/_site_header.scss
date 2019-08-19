@@ -1,3 +1,22 @@
 .genesis-nav-menu .current-menu-item > a {
   color: $text-color;
 }
+
+.site-header {
+  box-shadow: none;
+
+  a {
+    font-family: "Josefin Sans", sans-serif;
+  }
+
+  .wrap {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .menu-item-16 a {
+    padding-right: 0 !important;
+  }
+}
