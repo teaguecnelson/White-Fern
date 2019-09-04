@@ -2,18 +2,61 @@
   // background-color: $brand-color-light;
 
   .home-banner {
-    font-size: 48px;
+    font-size: 38px;
     line-height: 1.2em;
+    @media only screen and (min-width: 960px) {
+      font-size: 48px;
+    }
   }
 
   .site-inner {
     padding: 0 30px;
   }
 
-  .home-slider-wrapper {
+  // .home-slider-wrapper {
+  //   @media only screen and (min-width: 960px) {
+  //     max-width: calc(100vw - 280px);
+  //     margin: 0 auto;
+  //   }
+  // }
+
+  .show-mobile {
     @media only screen and (min-width: 960px) {
-      max-width: calc(100vw - 280px);
-      margin: 0 auto;
+      display: none;
+    }
+  }
+  .show-desktop {
+    display: none;
+    @media only screen and (min-width: 960px) {
+      display: block;
+    }
+  }
+
+  .jumbo-top-spacer {
+    height: 3rem;
+    @media only screen and (min-width: 960px) {
+      height: 80px;
+    }
+  }
+
+  .jumbo-bottom-spacer {
+    height: 1rem;
+    @media only screen and (min-width: 960px) {
+      height: 70px;
+    }
+  }
+
+  .slider-bottom-spacer {
+    height: 2rem;
+    @media only screen and (min-width: 960px) {
+      height: 50px;
+    }
+  }
+
+  .homesec-bottom-spacer {
+    height: 0.5rem;
+    @media only screen and (min-width: 960px) {
+      height: 30px;
     }
   }
 }

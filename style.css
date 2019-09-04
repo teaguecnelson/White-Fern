@@ -2269,8 +2269,12 @@ a {
 .entry-title h1 {
   line-height: 1.2em;
   letter-spacing: 0px;
-  font-size: 48px;
+  font-size: 38px;
   text-align: center; }
+  @media only screen and (min-width: 960px) {
+    .page h1,
+    .entry-title h1 {
+      font-size: 48px; } }
 
 h2 {
   font-size: 36px;
@@ -2279,8 +2283,7 @@ h2 {
 
 p {
   font-size: 22px;
-  line-height: 1.6em;
-  margin: 0 0 1.6em; }
+  line-height: 1.6em; }
 
 .underline {
   text-decoration: underline; }
@@ -2293,7 +2296,11 @@ p {
   color: rgba(28, 32, 24, 0.8); }
 
 .site-header {
-  box-shadow: none; }
+  box-shadow: none;
+  padding: 0 20px; }
+  @media only screen and (min-width: 960px) {
+    .site-header {
+      padding: 0 30px; } }
   .site-header a {
     font-family: "Josefin Sans", sans-serif; }
   .site-header .wrap {
@@ -2311,11 +2318,15 @@ p {
   color: #a6a6a6; }
 
 .footer-widgets h3 {
-  color: #fff; }
+  color: #a6a6a6;
+  font-size: 22px;
+  font-weight: thin;
+  font-family: "Josefin Sans", sans-serif;
+  margin-top: 10px; }
 
 .footer-widgets p,
 .footer-widgets a {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: thin;
   color: #a6a6a6; }
 
@@ -2335,6 +2346,9 @@ p {
 .footer-widgets-3 {
   padding: 2.5rem 6.5rem 0; }
 
+.footer-widgets-1 p {
+  padding-top: 9px; }
+
 .mc4wp-form-fields p {
   margin: 0; }
 
@@ -2347,8 +2361,10 @@ p {
   font-size: 16px;
   margin-bottom: 10px; }
 
-.email-form-submit-button {
-  margin-top: 15px; }
+.email-form-submit-button,
+input[type="submit"] {
+  margin-top: 15px;
+  color: #a6a6a6; }
 
 .jumbo {
   min-height: 60vh;
@@ -2390,8 +2406,8 @@ p {
 .angle--top-left {
   position: relative;
   overflow: hidden;
-  clip-path: polygon(0 calc(0% + 7vw), 100% 0, 100% 100%, 0 100%); }
-  @supports not (clip-path: polygon(0 calc(0% + 7vw), 100% 0, 100% 100%, 0 100%)) {
+  clip-path: polygon(0 calc(0% + 100vw), 100% 0, 100% 100%, 0 100%); }
+  @supports not (clip-path: polygon(0 calc(0% + 100vw), 100% 0, 100% 100%, 0 100%)) {
     .angle--top-left::before, .angle--top-left::after {
       content: "";
       position: absolute;
@@ -2401,7 +2417,7 @@ p {
       border-style: solid; }
     .angle--top-left::before {
       top: 0;
-      border-width: 8vw 100vw 0 0;
+      border-width: 101vw 100vw 0 0;
       border-color: #fff transparent transparent transparent; } }
 
 .angle--top-right {
@@ -2550,6 +2566,9 @@ p {
   text-align: center;
   padding: 10% 0; }
 
+.soliloquy-container {
+  margin: 0 auto !important; }
+
 .soliloquy-prev,
 .soliloquy-next {
   display: none !important; }
@@ -2557,18 +2576,217 @@ p {
 .header-highlight {
   width: 15%;
   height: 4px;
-  background-color: #478fcd; }
+  background-color: #478fcd;
+  margin-bottom: 2rem; }
+  @media only screen and (min-width: 960px) {
+    .header-highlight {
+      margin-bottom: 0; } }
+
+.angle--top-left {
+  position: relative;
+  overflow: hidden;
+  clip-path: polygon(0 calc(0% + 100vw), 100% 0, 100% 100%, 0 100%); }
+  @supports not (clip-path: polygon(0 calc(0% + 100vw), 100% 0, 100% 100%, 0 100%)) {
+    .angle--top-left::before, .angle--top-left::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      z-index: 10;
+      display: block;
+      border-style: solid; }
+    .angle--top-left::before {
+      top: 0;
+      border-width: 101vw 100vw 0 0;
+      border-color: #fff transparent transparent transparent; } }
+
+.angle--top-right {
+  position: relative;
+  overflow: hidden;
+  clip-path: polygon(0 0, 100% calc(0% + 7vw), 100% 100%, 0 100%); }
+  @supports not (clip-path: polygon(0 0, 100% calc(0% + 7vw), 100% 100%, 0 100%)) {
+    .angle--top-right::before, .angle--top-right::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      z-index: 10;
+      display: block;
+      border-style: solid; }
+    .angle--top-right::before {
+      top: 0;
+      border-width: 8vw 0 0 100vw;
+      border-color: #fff transparent transparent transparent; } }
+
+.angle--bottom-left {
+  position: relative;
+  overflow: hidden;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 7vw)); }
+  @supports not (clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 7vw))) {
+    .angle--bottom-left::before, .angle--bottom-left::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      z-index: 10;
+      display: block;
+      border-style: solid; }
+    .angle--bottom-left::after {
+      bottom: 0;
+      border-width: 0 100vw 8vw 0;
+      border-color: transparent transparent #fff transparent; } }
+
+.angle--bottom-right {
+  position: relative;
+  overflow: hidden;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 7vw), 0 100%); }
+  @supports not (clip-path: polygon(0 0, 100% 0, 100% calc(100% - 7vw), 0 100%)) {
+    .angle--bottom-right::before, .angle--bottom-right::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      z-index: 10;
+      display: block;
+      border-style: solid; }
+    .angle--bottom-right::after {
+      bottom: 0;
+      border-width: 0 0 8vw 100vw;
+      border-color: transparent transparent #fff transparent; } }
+
+.angle--both-left-left {
+  position: relative;
+  overflow: hidden;
+  clip-path: polygon(0 calc(0% + 7vw), 100% 0, 100% 100%, 0 calc(100% - 7vw)); }
+  @supports not (clip-path: polygon(0 calc(0% + 7vw), 100% 0, 100% 100%, 0 calc(100% - 7vw))) {
+    .angle--both-left-left::before, .angle--both-left-left::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      z-index: 10;
+      display: block;
+      border-style: solid; }
+    .angle--both-left-left::before {
+      top: 0;
+      border-width: 8vw 100vw 0 0;
+      border-color: #fff transparent transparent transparent; }
+    .angle--both-left-left::after {
+      bottom: 0;
+      border-width: 0 100vw 8vw 0;
+      border-color: transparent transparent #fff transparent; } }
+
+.angle--both-right-right {
+  position: relative;
+  overflow: hidden;
+  clip-path: polygon(0 0, 100% calc(0% + 7vw), 100% calc(100% - 7vw), 0 100%); }
+  @supports not (clip-path: polygon(0 0, 100% calc(0% + 7vw), 100% calc(100% - 7vw), 0 100%)) {
+    .angle--both-right-right::before, .angle--both-right-right::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      z-index: 10;
+      display: block;
+      border-style: solid; }
+    .angle--both-right-right::before {
+      top: 0;
+      border-width: 8vw 0 0 100vw;
+      border-color: #fff transparent transparent transparent; }
+    .angle--both-right-right::after {
+      bottom: 0;
+      border-width: 0 0 8vw 100vw;
+      border-color: transparent transparent #fff transparent; } }
+
+.angle--both-left-right {
+  position: relative;
+  overflow: hidden;
+  clip-path: polygon(0 calc(0% + 7vw), 100% 0, 100% calc(100% - 7vw), 0 100%); }
+  @supports not (clip-path: polygon(0 calc(0% + 7vw), 100% 0, 100% calc(100% - 7vw), 0 100%)) {
+    .angle--both-left-right::before, .angle--both-left-right::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      z-index: 10;
+      display: block;
+      border-style: solid; }
+    .angle--both-left-right::before {
+      top: 0;
+      border-width: 8vw 100vw 0 0;
+      border-color: #fff transparent transparent transparent; }
+    .angle--both-left-right::after {
+      bottom: 0;
+      border-width: 0 0 8vw 100vw;
+      border-color: transparent transparent #fff transparent; } }
+
+.angle--both-right-left {
+  position: relative;
+  overflow: hidden;
+  clip-path: polygon(0 0, 100% calc(0% + 7vw), 100% 100%, 0 calc(100% - 7vw)); }
+  @supports not (clip-path: polygon(0 0, 100% calc(0% + 7vw), 100% 100%, 0 calc(100% - 7vw))) {
+    .angle--both-right-left::before, .angle--both-right-left::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      z-index: 10;
+      display: block;
+      border-style: solid; }
+    .angle--both-right-left::before {
+      top: 0;
+      border-width: 8vw 0 0 100vw;
+      border-color: #fff transparent transparent transparent; }
+    .angle--both-right-left::after {
+      bottom: 0;
+      border-width: 0 100vw 8vw 0;
+      border-color: transparent transparent #fff transparent; } }
+
+.angle__content {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+.angle--colour {
+  color: #fff;
+  background-color: #2196f3;
+  text-align: center;
+  padding: 10% 0; }
 
 /** Organisms */
 /** Pages */
 .home .home-banner {
-  font-size: 48px;
+  font-size: 38px;
   line-height: 1.2em; }
+  @media only screen and (min-width: 960px) {
+    .home .home-banner {
+      font-size: 48px; } }
 
 .home .site-inner {
   padding: 0 30px; }
 
 @media only screen and (min-width: 960px) {
-  .home .home-slider-wrapper {
-    max-width: calc(100vw - 280px);
-    margin: 0 auto; } }
+  .home .show-mobile {
+    display: none; } }
+
+.home .show-desktop {
+  display: none; }
+  @media only screen and (min-width: 960px) {
+    .home .show-desktop {
+      display: block; } }
+
+.home .jumbo-top-spacer {
+  height: 3rem; }
+  @media only screen and (min-width: 960px) {
+    .home .jumbo-top-spacer {
+      height: 80px; } }
+
+.home .jumbo-bottom-spacer {
+  height: 1rem; }
+  @media only screen and (min-width: 960px) {
+    .home .jumbo-bottom-spacer {
+      height: 70px; } }
+
+.home .slider-bottom-spacer {
+  height: 2rem; }
+  @media only screen and (min-width: 960px) {
+    .home .slider-bottom-spacer {
+      height: 50px; } }
+
+.home .homesec-bottom-spacer {
+  height: 0.5rem; }
+  @media only screen and (min-width: 960px) {
+    .home .homesec-bottom-spacer {
+      height: 30px; } }

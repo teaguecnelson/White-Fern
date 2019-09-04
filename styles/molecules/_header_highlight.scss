@@ -2,4 +2,8 @@
   width: 15%;
   height: 4px;
   background-color: $brand-color-blue;
+  margin-bottom: 2rem;
+  @media only screen and (min-width: 960px) {
+    margin-bottom: 0;
+  }
 }
